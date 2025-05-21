@@ -2,7 +2,7 @@
 
 ### 1. Data Collection
 This add - in doesn't actively gather any personal user data, such as name, email, phone number, address, ID number, device ID, IP address, location, online identifier, username, avatar, biometrics, browsing history, shopping records, health data, financial info, etc., which could identify a person directly or indirectly.
-Note that the add - in asks users for database connection details, like the database IP, port, name, username, and password. If these details are linked to personal info, they may be regarded as personal data. We only use these database connection details to link the add - in to the specified database for its proper operation and unique data presentation and manipulation. They are solely utilized during the add - in's runtime and not for any other purposes beyond its functionality. We also don't share them with third parties.
+Note that the add - in asks users for database connection details, like the database IP, port, name, username. We only use these database connection details to link the add - in to the specified database for its proper operation and unique data presentation and manipulation. They are solely utilized during the add - in's runtime and not for any other purposes beyond its functionality. We also don't share them with third parties.
 ### 2. Data Usage
 We only use the database connection details users provide to connect the add - in to the specified database. This is essential for the add - in to work properly and offer unique data presentation and operations. These details are only used when the add - in is running and not for any other purposes beyond what the add - in is designed to do.
 ### 3. Third - Party Services

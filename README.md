@@ -17,6 +17,13 @@ Intelligently adapts to various database structures, with no additional developm
 
 ![添加数据源](./_assets/datasource.png)
 
+
+#### Dify Application
+Plugin Authorization:
+! [HelloDB Plugin Authorization] (./_ passes/dify plugin auth. png)
+Configure HelloDB in Workflow
+! [Use of HelloDB Plugin in Workflow] (./_ passes/dify workflow. png)
+
 #### Four Steps to Build an Intelligent Data Application
 Add Data Source Connection: Fill in basic connection information, supporting secure read-only permission configuration.  
 Create Data Application: Create dedicated applications for different business scenarios, customize names and access aliases.  

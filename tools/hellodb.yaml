@@ -33,10 +33,10 @@ parameters:
       zh_Hans: 应用密钥
       pt_BR: Clave de la aplicación
     human_description:
-      en_US: Please input app key
-      zh_Hans: 请输入应用密钥
-      pt_BR: Introduzca el clave de la aplicación
-    llm_description: 请输入应用密钥
+      en_US: Please create an application and view the《Third-party access》to get the APPKEY
+      zh_Hans: 请在创建应用后查看《三方接入》获取APPKEY
+      pt_BR: Crie uma aplicação e veja o《Acesso a terceiros》para obter a APPKEY
+    llm_description: 请在创建应用后查看《三方接入》获取APPKEY
     form: llm
 extra:
   python:

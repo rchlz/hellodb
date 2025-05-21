@@ -7,7 +7,7 @@ import requests
 from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
 
-HELLODB_API_BASE = 'https://www.sinapp.cn/api/'
+HELLODB_API_BASE = 'https://yun.sinapp.cn/api'
 
 class HellodbTool(Tool):
 
@@ -15,12 +15,14 @@ class HellodbTool(Tool):
     def _parse_response(self, response: dict) -> dict:
         result = {}
         print(response)
-        if "data" in response:
-            result["sql"] = response['data'].get("sql", "")
-            result["data"] = response['data'].get("data", "")
-            result["text"] = response['data'].get("text", "")
-        return result
-    
+        if response and response['code'] == 200:
+            if "data" in response:
+                result["sql"] = response['data'].get("sql", "")
+                result["data"] = response['data'].get("data", "")
+                result["text"] = response['data'].get("text", "")
+            return result
+        else:
+            raise Exception(response)
 
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
 
@@ -30,12 +32,12 @@ class HellodbTool(Tool):
         api_key = self.runtime.credentials["api_key"]
         api_base = self.runtime.credentials.get("api_base", HELLODB_API_BASE)
 
-
         api_url = api_base + "/openapi/v0/datasource/chat"
 
         data = {
             "app_key": app_key,
-            "question": question
+            "question": question,
+            "user_id": self.runtime.user_id
         }
 
         headers = {

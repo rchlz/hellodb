@@ -12,6 +12,7 @@ identity:
   icon: icon.svg
   tags:
     - productivity
+    - utilities
 credentials_for_provider: #添加 credentials_for_provider 字段
   api_key:
     type: secret-input
@@ -37,7 +38,7 @@ credentials_for_provider: #添加 credentials_for_provider 字段
       zh_Hans: 请输入你的 API Base 地址
     help:
       en_US: Get your API Base Url from HelloDB
-      zh_Hans: 从 HelloDB 获取您的 API Base 地址
+      zh_Hans: 从 HelloDB 获取您的 API Base 地址，默认为https://yun.sinapp.cn/api
 tools:
   - tools/hellodb.yaml
 extra:
