@@ -30,14 +30,18 @@ class HellodbTool(Tool):
         question = tool_parameters['query']
 
         api_key = self.runtime.credentials["api_key"]
-        api_base = self.runtime.credentials.get("api_base", HELLODB_API_BASE)
+        api_base = self.runtime.credentials["api_base"]
+
+        api_base = HELLODB_API_BASE if not api_base or api_base == "" else api_base
 
         api_url = api_base + "/openapi/v0/datasource/chat"
 
         data = {
             "app_key": app_key,
             "question": question,
-            "user_id": self.runtime.user_id
+            "from": "dify plugin",
+            "user_id": self.runtime.user_id,
+            "plugin_version": "0.1.1"
         }
 
         headers = {

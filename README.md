@@ -1,7 +1,7 @@
 ## hellodb
 
 **Author:** cdnxy  
-**Version:** 0.0.7  
+**Version:** 0.1.1  
 **Type:** tool
 
 ### Introduction
@@ -20,9 +20,11 @@ Intelligently adapts to various database structures, with no additional developm
 
 #### Dify Application
 Plugin Authorization:
-! [HelloDB Plugin Authorization] (./_ passes/dify plugin auth. png)
+![HelloDB Plugin Authorization](./_assets/dify-plugin-auth.png)
 Configure HelloDB in Workflow
-! [Use of HelloDB Plugin in Workflow] (./_ passes/dify workflow. png)
+![Use of HelloDB Plugin in Workflow](./_assets/dify-workflow.png)
+
+For more Information, please click here to view: [View Document](https://e1ryau52efm.feishu.cn/wiki/L2gwwGLZmi6HSSkpICccMuVnnic?from=from_copylink)
 
 #### Four Steps to Build an Intelligent Data Application
 Add Data Source Connection: Fill in basic connection information, supporting secure read-only permission configuration.  

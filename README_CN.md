@@ -1,7 +1,7 @@
 ## hellodb
 
 **Author:** cdnxy
-**Version:** 0.0.7
+**Version:** 0.1.1
 **Type:** tool
 
 ### 介绍
@@ -24,6 +24,8 @@ HelloDB 是一款数据库智能对话平台，只需简单几步，即可让您
 
 工作流中配置插件
 ![Dify插件在工作流中的使用](./_assets/dify-workflow.png)
+
+更多使用说明，请点击此处查看：[查看使用说明](https://e1ryau52efm.feishu.cn/wiki/L2gwwGLZmi6HSSkpICccMuVnnic?from=from_copylink)
 
 #### 四步打造智能数据应用
 添加数据源连接：填写基础连接信息，支持安全的只读权限配置
